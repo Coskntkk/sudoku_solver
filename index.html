@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3274/3274216.png" type="image/png">
+</head>
+<body>
+    <div class="sudoku-container">
+        <!-- Create 81 cells for the Sudoku grid -->
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="a_a" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="a_b" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="a_c" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="a_d" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="a_e" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="a_f" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="a_g" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="a_h" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="a_i" >
+
+        <!-- Create 81 cells for the Sudoku grid -->
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="b_a" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="b_b" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="b_c" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="b_d" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="b_e" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="b_f" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="b_g" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="b_h" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="b_i" >
+
+        <!-- Create 81 cells for the Sudoku grid -->
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="c_a" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="c_b" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="c_c" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="c_d" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="c_e" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="c_f" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="c_g" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="c_h" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="c_i" >
+
+        <!-- Create 81 cells for the Sudoku grid -->
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="d_a" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="d_b" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="d_c" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="d_d" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="d_e" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="d_f" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="d_g" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="d_h" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="d_i" >
+
+        <!-- Create 81 cells for the Sudoku grid -->
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="e_a" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="e_b" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="e_c" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="e_d" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="e_e" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="e_f" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="e_g" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="e_h" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="e_i" >
+
+        <!-- Create 81 cells for the Sudoku grid -->
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="f_a" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="f_b" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="f_c" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="f_d" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="f_e" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="f_f" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="f_g" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="f_h" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="f_i" >
+
+        <!-- Create 81 cells for the Sudoku grid -->
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="g_a" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="g_b" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="g_c" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="g_d" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="g_e" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="g_f" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="g_g" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="g_h" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="g_i" >
+
+        <!-- Create 81 cells for the Sudoku grid -->
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="h_a" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="h_b" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="h_c" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="h_d" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="h_e" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="h_f" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="h_g" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="h_h" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="h_i" >
+
+        <!-- Create 81 cells for the Sudoku grid -->
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="i_a" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="i_b" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="i_c" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="i_d" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="i_e" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell lightgray" id="i_f" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="i_g" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="i_h" >
+        <input type="text" maxLength=1 min=0 max=9 maxlength="1" class="cell" id="i_i" >
+    </div>
+
+    <div id="buttons">
+        <button type="button" class="btn btn-success" id="solve" onclick="solve()">Solve</button>
+        <button type="button" class="btn btn-warning" id="cancel" onclick="cancelSolver()">Reset</button>
+    </div>
+
+    <div id="message" class="alert alert-danger" role="alert" style="display: none;">
+    This is a danger alert—check it out!
+    </div>
+
+    <a href="https://coskntkk.github.io/sudoku_solver/">Github</a>
+
+    <script src="app.js"></script>
+</body>
+</html>
